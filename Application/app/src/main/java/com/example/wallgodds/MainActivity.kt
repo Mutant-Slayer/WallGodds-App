@@ -75,7 +75,7 @@ class MainActivity : ComponentActivity() {
                 val currentDestination = navBackStackEntry?.destination
                 val snackbarHostState = remember { SnackbarHostState() }
                 val showLikeSnackBar by remember { mainViewModel.likeWallpaperSnackBarEnabled }.collectAsStateWithLifecycle(
-                    true
+                    false
                 )
 
                 Scaffold(
